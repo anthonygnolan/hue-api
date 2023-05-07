@@ -1,0 +1,17 @@
+openapi: 3.0.2
+info:
+  title: Philips Hue API
+  description: RESTful API for the hue bridge.
+  termsOfService: https://developers.meethue.com/terms-of-use-and-conditions/
+  contact:
+    name: API Support
+    url: https://developers.meethue.com/support/
+  version: 1.4.0
+servers: 
+  - url: http://{bridge ip address}
+    description: Local
+    variables:
+      bridge ip address:
+        default: '192.168.1.1'
+  - url: https://api.meethue.com/route
+    description: Remote
